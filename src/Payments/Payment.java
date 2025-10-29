@@ -5,10 +5,10 @@ public class Payment {
     public String currency;
     public String status;
 
-    public Payment(double amount,String currency,String status){
+    public Payment(double amount,String currency,String PENDING){
         this.amount=amount;
         this.currency=currency;
-        this.status=status;
+        this.status=PENDING;
     }
 
     public void processPayment(){
@@ -16,10 +16,14 @@ public class Payment {
     }
 
     public void generateReceipt(){
-        System.out.println("Receipt for amount X currency Y");
+        System.out.println("Receipt for amount" +this.amount +" "+ "currency" + this.currency);
 
 
     }
+    public void marksCompleted(){
+        this.status= "COMPLETED";
+        System.out.println("Payment status completed" + " " +this.status);
+    }
 
-    public void
+
 }
