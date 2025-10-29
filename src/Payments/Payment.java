@@ -16,7 +16,7 @@ public class Payment {
     }
 
     public void generateReceipt(){
-        System.out.println("Receipt for amount" +this.amount +" "+ "currency" + this.currency);
+        System.out.println("Receipt for amount" +this.amount +" "+ "currency"+ " " + this.currency);
 
 
     }

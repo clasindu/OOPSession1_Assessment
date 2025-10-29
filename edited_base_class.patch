@@ -1,0 +1,23 @@
+Subject: [PATCH] edited base class
+---
+Index: src/Payments/Payment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Payments/Payment.java b/src/Payments/Payment.java
+--- a/src/Payments/Payment.java	(revision 8513b9130ccf917d16d5418aebac0026224c14b0)
++++ b/src/Payments/Payment.java	(revision 6552fc820a8abf8f507b55159692a7a923111165)
+@@ -5,10 +5,10 @@
+     public String currency;
+     public String status;
+ 
+-    public Payment(double amount,String currency,String PENDING){
++    public Payment(double amount,String currency,String Status){
+         this.amount=amount;
+         this.currency=currency;
+-        this.status=PENDING;
++        this.status=Status;
+     }
+ 
+     public void processPayment(){

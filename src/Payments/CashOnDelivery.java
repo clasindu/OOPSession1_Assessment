@@ -1,11 +1,10 @@
 package Payments;
 
-import java.util.ArrayList;
 
 public class CashOnDelivery extends Payment {
-    public ArrayList<String> deliveryAddress;
+    public String deliveryAddress;
 
-    public CashOnDelivery(double amount, String currency, String Status, ArrayList<String> Addresses) {
+    public CashOnDelivery(double amount, String currency, String Status, String Addresses) {
         super(amount, currency, Status);
         this.deliveryAddress=Addresses;
 
@@ -14,9 +13,14 @@ public class CashOnDelivery extends Payment {
     @Override
 
     public void processPayment(){
-        System.out.println("Cash will be collected at delivery address: <address>" + this.deliveryAddress);
+        super.processPayment();
+        System.out.println("Cash will be collected at delivery address: " + this.deliveryAddress);
 
 
+    }
+
+    public void generateReceipt(){
+        super.generateReceipt();
     }
 }
 
