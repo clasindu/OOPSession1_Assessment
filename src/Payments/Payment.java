@@ -5,10 +5,10 @@ public class Payment {
     public String currency;
     public String status;
 
-    public Payment(double amount,String currency,String PENDING){
+    public Payment(double amount,String currency,String Status){
         this.amount=amount;
         this.currency=currency;
-        this.status=PENDING;
+        this.status=Status;
     }
 
     public void processPayment(){
